@@ -13,7 +13,7 @@ html {
 
 #content {
   margin: 10vh;
-  font: 400 22px/1.6 'Noto Serif TC', serif;
+  font: 400 24px/1.6 'Noto Serif TC', serif;
   overflow: none;
   overflow-y: scroll;
   height: 80vh;
@@ -39,7 +39,7 @@ audio, canvas, video {
 
 /* 要注意表单元素并不继承父级 font 的问题 */
 body, button, input, select, textarea {
-	font: 500 14px/1.6 'Noto Serif TC', serif;
+	font: 500 1em/1.6 'Noto Serif TC', serif;
 }
 
 /* 去掉各Table  cell 的边距并让其边重合 */
