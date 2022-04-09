@@ -13,6 +13,7 @@ html {
 #content {
 	margin: 10vh;
   	font: 400 24px/1.6 'Noto Serif TC', serif;
+	  letter-spacing: 0.4ch;
  	overflow: none;
  	overflow-y: scroll;
  	height: 80vh;
