@@ -1,6 +1,5 @@
 @charset "utf-8";
 
-/* 防止用户自定义背景颜色对网页的影响，添加让用户可以自定义字体 */
 html {
 	color: #000;
 	background: rgb(241, 240, 231);
@@ -12,63 +11,53 @@ html {
 }
 
 #content {
-  margin: 10vh;
-  font: 400 24px/1.6 'Noto Serif TC', serif;
-  overflow: none;
-  overflow-y: scroll;
-  height: 80vh;
+	margin: 10vh;
+  	font: 400 24px/1.6 'Noto Serif TC', serif;
+ 	overflow: none;
+ 	overflow-y: scroll;
+ 	height: 80vh;
 }
 
-/* 内外边距通常让各个浏览器样式的表现位置不同 */
 body, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td, hr, button, article, aside, details, figcaption, figure, footer, header, group, menu, nav, section {
 	margin: 0;
 	padding: 0;
 }
 
-/* 重设 HTML5 标签, IE 需要在 js 中 createElement(TAG) */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 
-/* HTML5 媒体文件跟 img 保持一致 */
 audio, canvas, video {
 	display: inline-block;
 	*display: inline;
 	*zoom: 1;
 }
 
-/* 要注意表单元素并不继承父级 font 的问题 */
 body, button, input, select, textarea {
 	font: 500 1em/1.6 'Noto Serif TC', serif;
 }
 
-/* 去掉各Table  cell 的边距并让其边重合 */
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
 
-/* IE bug fixed: th 不继承 text-align*/
 th {
 	text-align: inherit;
 }
 
-/* 去除默认边框 */
 fieldset, img {
 	border: 0;
 }
 
-/* 解决 IE6-7 图片缩放锯齿问题 */
 img {
     -ms-interpolation-mode: bicubic;    
 }
 
-/* ie6 7 8(q) bug 显示为行内表现 */
 iframe {
 	display: block;
 }
 
-/* 块/段落引用 */
 blockquote {
 	margin: 1em 4em 1em 2em;
 	padding: 0.6em 1em;
@@ -80,18 +69,15 @@ blockquote blockquote {
 	border-left: 0.4em solid #ddd;
 }
 
-/* Firefox 以外，元素没有下划线，需添加 */
 acronym, abbr {
 	border-bottom: 1px dotted;
 	font-variant: normal;
 }
 
-/* 添加鼠标问号，进一步确保应用的语义是正确的（要知道，交互他们也有洁癖，如果你不去掉，那得多花点口舌） */
 abbr {
 	cursor: help;
 }
 
-/* 一致的 del 样式 */
 del {
 	text-decoration: line-through;
 }
@@ -101,12 +87,10 @@ address, caption, cite, code, den, em, th, var {
 	font-weight: 500;
 }
 
-/* 去掉列表前的标识, li 会继承，大部分网站通常用列表来很多内容，所以应该当去 */
 ul, ol {
 	list-style: none;
 }
 
-/* 对齐是排版最重要的因素, 别让什么都居中 */
 caption, th {
 	text-align: left;
 }
@@ -115,16 +99,17 @@ q:before, q:after {
 	content: '';
 }
 
-/* 统一上标和下标 */
 sub, sup {
 	font-size: 75%;
 	line-height: 0;
 	position: relative;
 	vertical-align: text-top\9;
 }
+
 :root sub, :root sup{
 	vertical-align: baseline; /* for ie9 and other mordern browsers */
 }
+
 sup {
 	top: -0.5em;
 }
@@ -132,30 +117,21 @@ sub {
 	bottom: -0.25em;
 }
 
-/* 让链接在 hover 状态下显示下划线 */
 a:hover {
 	font-weight: 700;
 	text-decoration: underline;
     color:#333;
 }
 
-/* 默认不显示下划线，保持页面简洁 */
 ins, a {
 	text-decoration: none;
     color:#333;
 }
 
-/* 专名号：虽然 u 已经重回 html5 Draft，但在所有浏览器中都是可以使用的，
- * 要做到更好，向后兼容的话，添加 class="typo-u" 来显示专名号
- * 关于 <u> 标签：http://www.whatwg.org/specs/web-apps/current-work/multipage/text-level-semantics.html#the-u-element
- * 被放弃的是 4，之前一直搞错 http://www.w3.org/TR/html401/appendix/changes.html#idx-deprecated
- * 一篇关于 <u> 标签的很好文章：http://html5doctor.com/u-element/ 
- */
 u, .typo-u {
 /* 	text-decoration: underline; */
 }
 
-/* 标记，类似于手写的荧光笔的作用 */
 mark {
 	text-decoration: underline;
 	background: rgb(241, 240, 231);
@@ -163,10 +139,6 @@ mark {
 
 }
 
-/* 代码片断 */
-/* pre, code {
-	font-family: "Courier New", Courier, monospace;
-} */
 pre {
 	font: 700 24px/1.6 'Noto Serif TC', serif;
 	border: 1px solid #ddd;
@@ -174,11 +146,10 @@ pre {
 	padding: 2em;
 }
 
-/* 底部印刷体、版本等标记 */
 small {
 	font-size: 18px;
-  font-weight: 700;
-  line-height: 24px;
+  	font-weight: 700;
+  	line-height: 24px;
 	color: #333;
 }
 
@@ -195,7 +166,6 @@ small {
 	zoom: 1
 }
 
-/* 保证块/段落之间的空白隔行 */
 .typo p, .typo pre, .typo ul, .typo ol, .typo dl, .typo form, .typo hr, .typo table,
 .typo-p, .typo-pre, .typo-ul, .typo-ol, .typo-dl, .typo-form, .typo-hr, .typo-table {
 	margin-bottom: 1em;
@@ -208,19 +178,20 @@ h1, h2, h3, h4, h5, h6{
 	color:#333;
 }
 
-/* 标题应该更贴紧内容，并与其他块区分，margin 值要相应做优化 */
 .typo h1, .typo h2, .typo h3, .typo h4, .typo h5, .typo h6,
 .typo-h1, .typo-h2, .typo-h3, .typo-h4, .typo-h5, .typo-h6 {
 	margin-bottom: 0.4em;
 	line-height: 1.5;
 }
 .typo h1, .typo-h1 {
-	font-size: 2.4em;
+	font-size: 2.2em;
   font-weight: 700;
 }
 .typo h2, .typo-h2 {
+	font-weight: 400;
+	letter-spacing: 0.6ch;
 	font-size: 1.6em;
-	line-height: 2;
+	line-height: 3;
 }
 .typo h3, .typo-h3 {
 	font-size: 1.4em;
@@ -232,7 +203,6 @@ h1, h2, h3, h4, h5, h6{
 	font-size: 1em;
 }
 
-/* 在文章中，应该还原 ul 和 ol 的样式 */
 .typo ul, .typo-ul {
 	margin-left: 1.3em;
 	list-style: disc;
@@ -250,24 +220,23 @@ h1, h2, h3, h4, h5, h6{
 	list-style: circle;
 }
 
-/* 同 ul/ol，在文章中应用 table 基本格式 */
 .typo table th, .typo table td, .typo-table th, .typo-table td {
 	border: 1px solid #ddd;
 	padding: 5px 10px;
 }
+
 .typo table th, .typo-table th {
 	background: #fbfbfb;
 }
+
 .typo table thead th, .typo-table thead th {
 	background: #f1f1f1;
 }
 
-/* TODO: 供着重号使用 */
 .typo-em, .typo em {
 	font-weight: 700;
 }
 
-/* TODO: 供首字下沉使用 */
 .typo-first{
 
 }
@@ -281,17 +250,45 @@ h1, h2, h3, h4, h5, h6{
 
 
 }
+
 #line {
-    /* margin-top: 100px; */
-	width: 24px;
+	width: 8px;
     height: 100%;
-    border-left: 2px solid #000000;
+    border-right: 2px solid #000000;
     }
 
-/*
-.footer{
- background: url('http://res.sa20.com/1472958553128208001.jpg') 65% 2% no-repeat; 
- width: 280px;
-  opacity: 0.8;
+.inde {	
+	height: 100%;
+	width: 4.8em;
 }
-*/
+
+.name {
+	float:left;
+}
+
+.bt {
+	width: 90%;	
+	margin-right: 0em;
+	padding-right: 1.6em;
+}
+
+.author, .qu {
+	letter-spacing: 0.6ch;
+	font-size: 0.6em;
+	line-height: 1.4;
+	
+}
+.author {
+	
+}
+
+#line2 {
+	width: 1.6em;
+    height: 2px;
+	margin-top: 0em;
+	margin-bottom: 1em;
+	margin-left: 0em;
+	margin-right: 1.6em;
+    border-bottom: 1px solid #000000;
+	float: left;
+}
