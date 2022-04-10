@@ -193,8 +193,7 @@ mark {
 }
 
 pre {
-	font: 700 24px/1.6 'Noto Serif TC', serif;
-	border: 1px solid #ddd;
+	font: 700 1.2em/1.6 'Noto Serif TC', serif;
 	background: rgb(241, 240, 231);
 	padding: 2em;
 }
@@ -219,12 +218,15 @@ small {
 	zoom: 1
 }
 
-.typo p, .typo pre, .typo ul, .typo ol, .typo dl, .typo form, .typo hr, .typo table,
-.typo-p, .typo-pre, .typo-ul, .typo-ol, .typo-dl, .typo-form, .typo-hr, .typo-table {
+.typo p, .typo pre, .typo ul, .typo ol, .typo dl, .typo form, .typo table,
+.typo-p, .typo-pre, .typo-ul, .typo-ol, .typo-dl, .typo-form, .typo-table {
 	margin-bottom: 1em;
     margin-right: 1em;
 }
-
+.typo hr, .typo-hr{
+	margin-left: 0.6em;
+	margin-right: 0.6em;
+}
 h1, h2, h3, h4, h5, h6{
 	font-weight: 500;
 	font-weight: 800\9;
