@@ -23,7 +23,59 @@ body, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset,
 	margin: 0;
 	padding: 0;
 }
+.side {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 1000;
+	width: 60px;
+	border-left: 1px dashed rgb(0, 0, 0);
+	background-color: rgba(241, 240, 231, 0.96);
+	color: rgba(0, 0, 0, 0.3);
+	text-transform: uppercase;
+	letter-spacing: 1ch;
+	font-size: 0.9em;
+	transition: all 0.3s cubic-bezier(0.05, 0.69, 0.14, 1);
+  }
 
+  .side a:hover {
+	text-decoration: none;
+	color: rgba(0, 0, 0, 0.9);
+  }
+ 
+  .side .top {
+	padding-top: 24px;
+	padding-right: 20px;
+	text-align: left;
+	height: 60px;
+	float: left;
+  }
+  .side .bottom {
+	
+	
+	position: fixed;
+	padding-top: 24px;
+	padding-right: 20px;
+	top: auto;
+	bottom: 24px;
+  }
+  .prt {
+	  width: 16px;
+	  height: 16px;
+	font-size: 1.1em;
+	font-weight: 700;
+	line-height: 1;
+	color: rgba(224, 63, 63, 0.92);
+	border: 1.6px solid rgba(224, 63, 63, 0.92);
+	border-radius: 25px;
+  }
+  .prt a{
+	color: rgba(224, 63, 63, 0.92);
+  }
+  .prt a:hover{
+	color: rgba(224, 63, 63, 0.92);
+  }
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
 	display: block;
 }
