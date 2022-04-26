@@ -1,4 +1,8 @@
 @charset "utf-8";
+::-webkit-scrollbar {
+	display: none; /* Chrome Safari */
+  }
+
 
 html {
 	color: #000;
@@ -8,6 +12,8 @@ html {
     writing-mode: vertical-rl;
     -webkit-writing-mode: vertical-rl;
     -ms-writing-mode: vertical-rl; 
+	-ms-overflow-style: none; /* IE 10+ */
+	scrollbar-width: none; /* Firefox */
 }
 
 #content {
