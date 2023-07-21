@@ -107,7 +107,9 @@ hr {
 .qu {
   font: 400 1rem/1 'Huiwen-mincho', serif;
 }
-
+.small {
+	font: 600 1.6rem/1 'Huiwen-mincho', serif;
+}
 #line {
 	width: 1px;
     height: 100%;
