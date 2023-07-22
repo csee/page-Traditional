@@ -1,5 +1,11 @@
 @charset "utf-8";
 ::-webkit-scrollbar {display: none;}
+@font-face {
+  font-family: 'OldSong';
+  src: url('font/OldSong.ttf') format('truetype'),
+       url('font/OldSong.woff') format('woff'),
+       url('font/OldSong.otf') format('opentype');
+}
 
 html {
   color: #000;
@@ -39,7 +45,7 @@ body {
 
 
 h1 {
-  font: 400 3.6rem/1.2 'Huiwen-mincho', serif;
+  font: 400 3.6rem/1.2 'OldSong', serif;
   letter-spacing: 0.6rem;
 	color:#333;
   padding-left: 4vh;
